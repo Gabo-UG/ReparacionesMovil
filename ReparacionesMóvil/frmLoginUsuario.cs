@@ -39,19 +39,34 @@ namespace ReparacionesMovil
         }
         private void RealizarInicioSesion()
         {
-            string nombreUsuario = txtUsuario.Text;
-            string contraseña = txtContrasenia.Text;
+            try
+            {
+                string nombreUsuario = txtUsuario.Text;
+                string contraseña = txtContrasenia.Text;
 
-            if (AutenticarUsuario(nombreUsuario, contraseña))
-            {
-                IsAuthenticated = true;
-                frmMenu menuForm = new frmMenu();
-                menuForm.Show();
-                this.Hide();
+                // Validar entrada básica
+                if (string.IsNullOrWhiteSpace(nombreUsuario) || string.IsNullOrWhiteSpace(contraseña))
+                {
+                    MessageBox.Show("Por favor, complete todos los campos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (AutenticarUsuario(nombreUsuario, contraseña))
+                {
+                    IsAuthenticated = true;
+                    frmMenu menuForm = new frmMenu();
+                    menuForm.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Nombre de usuario o contraseña incorrectos.", "Error de autenticación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Nombre de usuario o contraseña incorrectos.", "Error de autenticación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Manejo genérico de errores
+                MessageBox.Show($"Ocurrió un error al intentar iniciar sesión: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private bool AutenticarUsuario(string nombreUsuario, string contraseña)
