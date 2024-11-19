@@ -55,7 +55,7 @@ namespace Negocio.Entidades
         }
         public DataTable ObtenerClientePorID(int id)
         {
-            List<SqlParameter> parametros = new List<SqlParameter>
+            List<SqlParameter> parametros= new List<SqlParameter>
             {
                 new SqlParameter("@ClienteID", SqlDbType.Int) { Value = id },
             };
