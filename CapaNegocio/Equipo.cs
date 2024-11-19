@@ -43,7 +43,7 @@ namespace Negocio.Entidades
             return obj.ObtenerEquiposPorCliente(parametros);
         }
 
-
+        
         public DataTable ObtenerEquipoPorCorreo(string correo)
         {
             List<SqlParameter> parametros = new List<SqlParameter>
