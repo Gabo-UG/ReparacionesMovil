@@ -31,7 +31,7 @@ namespace ReparacionesMovil
 
         private void txt_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Verificar si la tecla presionada es "Enter"
+            //Verificar si la tecla presionada es "Enter"
             if (e.KeyChar == (char)Keys.Enter)
             {
                 RealizarInicioSesion();
