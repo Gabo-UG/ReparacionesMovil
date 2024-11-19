@@ -10,7 +10,7 @@ namespace Negocio.Entidades
         private InterfaceNegocio obj = new InterfaceNegocio();
         public string Rol { get; set; }
         public string Credenciales { get; set; }
-
+        
         public Usuario() { }
 
         public DataTable ObtenerUsuarios()
