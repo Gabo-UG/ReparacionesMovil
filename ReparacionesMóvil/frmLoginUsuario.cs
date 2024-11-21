@@ -13,6 +13,8 @@ using Negocio.Entidades;
 
 namespace ReparacionesMovil
 {
+
+    // Formulario para el inicio de sesión de usuarios
     public partial class frmLoginUsuario : Form
     {
         public bool IsAuthenticated { get; private set; } = false;
@@ -20,13 +22,14 @@ namespace ReparacionesMovil
         {
             InitializeComponent();
 
+            // Agregar el evento KeyPress para capturar cuando el usuario presiona la tecla Enter
             txtUsuario.KeyPress += new KeyPressEventHandler(txt_KeyPress);
             txtContrasenia.KeyPress += new KeyPressEventHandler(txt_KeyPress);
         }
 
         private void btnIniciarSeccion_Click(object sender, EventArgs e)
         {
-            RealizarInicioSesion();
+            RealizarInicioSesion(); // Llama al método que maneja el proceso de autenticación
         }
 
         private void txt_KeyPress(object sender, KeyPressEventArgs e)
@@ -41,6 +44,7 @@ namespace ReparacionesMovil
         {
             try
             {
+                // Obtener los valores de usuario y contraseña de los campos de texto
                 string nombreUsuario = txtUsuario.Text;
                 string contraseña = txtContrasenia.Text;
 
@@ -71,6 +75,7 @@ namespace ReparacionesMovil
         }
         private bool AutenticarUsuario(string nombreUsuario, string contraseña)
         {
+            // Verificación básica con valores estáticos
             return nombreUsuario == "adminJ" && contraseña == "jnvj1234"; // Ejemplo básico
         }
 
