@@ -77,7 +77,8 @@ namespace Negocio.Entidades
                 new SqlParameter("@NumeroSerie", SqlDbType.NVarChar, 100) { Value = NumeroSerie },
                 new SqlParameter("@FechaIngreso", SqlDbType.DateTime) { Value = FechaIngreso },
                 new SqlParameter("@Estado", SqlDbType.NVarChar, 50) { Value = Estado },
-                new SqlParameter("@ClienteID", SqlDbType.Int) { Value = ClienteId },
+                new SqlParameter("@ClienteID", SqlDbType.Int) { Value = ClienteId},
+
             };
 
             return obj.ActualizarEquipo(parametros);

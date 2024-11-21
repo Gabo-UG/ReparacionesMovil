@@ -28,6 +28,7 @@ namespace CapaPresentacion
         private void frmGestionEquipos_Load(object sender, EventArgs e)
         {
             CargarEquipos();
+            CargarEstados();
             CargarClientes();
             AgregarBotones();
         }
@@ -74,6 +75,14 @@ namespace CapaPresentacion
             {
                 dgvEquipos.Columns.Add(btnEliminarColumn);
             }
+        }
+        private void CargarEstados()
+        {
+            cmbEstado.Items.Clear();
+            cmbEstado.Items.Add("En Reparación");
+            cmbEstado.Items.Add("Reparado");
+            cmbEstado.Items.Add("Operativo");
+            cmbEstado.SelectedIndex = -1; // Dejar sin selección al inicio
         }
 
         private void CargarEquipos()
@@ -207,7 +216,31 @@ namespace CapaPresentacion
                 txtTipo.Text = fila.Cells["Tipo"].Value.ToString();
                 txtSerie.Text = fila.Cells["NumeroSerie"].Value.ToString();
                 string estado = fila.Cells["Estado"].Value.ToString();
-                cmbEstado.SelectedItem = estado;
+                //actualizacion de clinete y estado
+                bool estadoEncontrado = false;
+                foreach (var item in cmbEstado.Items)
+                {
+                    if (item.ToString().Equals(estado, StringComparison.OrdinalIgnoreCase)) 
+                    {
+                        cmbEstado.SelectedItem = item; 
+                        estadoEncontrado = true;
+                        break;
+                    }
+                }
+
+                // Si no se encontró el estado, asigna un valor por defecto o muestra un mensaje
+                if (!estadoEncontrado)
+                {
+                    cmbEstado.SelectedIndex = -1; // Limpia la selección si no coincide
+                    MessageBox.Show($"El estado '{estado}' no se encontró en la lista de estados disponibles.", "Advertencia");
+                }
+                // Actualizar el cliente
+                if (fila.Cells["ClienteID"].Value != null)
+                {
+                    int clienteId = Convert.ToInt32(fila.Cells["ClienteID"].Value);
+                    cbClientes.SelectedValue = clienteId; // Se asigna el ID del cliente al ComboBox
+                }
+           
                 if (fila.Cells["FechaIngreso"].Value != null && DateTime.TryParse(fila.Cells["FechaIngreso"].Value.ToString(), out DateTime fecha))
                 {
                     dateIngreso.Value = fecha;

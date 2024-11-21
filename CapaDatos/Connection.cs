@@ -11,7 +11,7 @@ namespace Datos
 {
     internal class Connection
     {
-        private SqlConnection conexion = new SqlConnection("Server=" + Conf.server + "; Database=ReparacionesMovil; Integrated Security=true");
+        private SqlConnection conexion = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=CS_ReparacionMovil;Trusted_Connection=True;");
 
         public SqlConnection AbrirConexion()
         {
