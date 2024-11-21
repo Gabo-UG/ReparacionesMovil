@@ -7,8 +7,11 @@ namespace Negocio.Entidades
 {
     public class Usuario 
     {
+        // Objeto de la capa de negocio para interactuar con la base de datos.
         private InterfaceNegocio obj = new InterfaceNegocio();
         public string Rol { get; set; }
+
+        // Propiedad para las credenciales del usuario
         public string Credenciales { get; set; }
         
         public Usuario() { }
@@ -20,6 +23,7 @@ namespace Negocio.Entidades
 
         public DataTable ObtenerUsuarioPorID(int id)
         {
+            // Crear lista de parámetros para el procedimiento almacenado o consulta SQL.
             List<SqlParameter> parametros = new List<SqlParameter>
             {
                 new SqlParameter("@UsuarioID", SqlDbType.Int) { Value = id },
@@ -30,6 +34,7 @@ namespace Negocio.Entidades
 
         public bool InsertarUsuario()
         {
+            // Crear lista de parámetros con los datos necesarios para el usuario.
             List<SqlParameter> parametros = new List<SqlParameter>
             {
                 new SqlParameter("@Rol", SqlDbType.NVarChar, 50) { Value = Rol },
@@ -41,6 +46,7 @@ namespace Negocio.Entidades
 
         public bool ActualizarUsuario(int id)
         {
+            // Crear lista de parámetros con los datos actualizados del usuario.
             List<SqlParameter> parametros = new List<SqlParameter>
             {
                 new SqlParameter("@UsuarioID", SqlDbType.Int) { Value = id },
@@ -53,6 +59,7 @@ namespace Negocio.Entidades
 
         public bool EliminarUsuario(int id)
         {
+            // Crear lista de parámetros con el ID del usuario a eliminar.
             List<SqlParameter> parametros = new List<SqlParameter>
             {
                 new SqlParameter("@UsuarioID", SqlDbType.Int) { Value = id },
