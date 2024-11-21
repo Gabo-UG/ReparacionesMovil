@@ -8,6 +8,7 @@ namespace Negocio.Entidades
 {
     public class Equipo
     {
+        // Instancia de la interfaz para manejar las operaciones de negocio con la base de datos
         private InterfaceNegocio obj = new InterfaceNegocio();
         public int Id { get; set; }
         public string Tipo { get; set; }
@@ -23,6 +24,7 @@ namespace Negocio.Entidades
             return obj.ObtenerEquipos();
         }
 
+        // Obtiene los datos de un equipo filtrado por su número de serie.
         public DataTable ObtenerEquipoPorNumeroSerie(string numeroSerie)
         {
             List<SqlParameter> parametros = new List<SqlParameter>
@@ -33,6 +35,7 @@ namespace Negocio.Entidades
             return obj.ObtenerEquipoPorNumeroSerie(parametros);
         }
 
+        // Obtiene todos los equipos asociados a un cliente específico.
         public DataTable ObtenerEquiposPorCliente(int clienteId)
         {
             List<SqlParameter> parametros = new List<SqlParameter>
