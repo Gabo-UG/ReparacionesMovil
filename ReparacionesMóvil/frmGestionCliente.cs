@@ -8,7 +8,7 @@ namespace ReparacionesMovil
 {
     public partial class frmGestionCliente : Form
     {
-        private Cliente cliente;
+        private Cliente cliente; // Instancia para manejar las operaciones del cliente
         private bool esNuevo = false;
         private int clienteId = -1;
 
@@ -24,9 +24,11 @@ namespace ReparacionesMovil
             AgregarBotones();
         }
 
+        // Agrega botones de edición y eliminación al DataGridView si no existen
+
         private void AgregarBotones()
         {
-            
+
             if (dgvClientes.Columns["btnEditar"] == null)
             {
                 DataGridViewButtonColumn btnEditarColumn = new DataGridViewButtonColumn
@@ -56,7 +58,7 @@ namespace ReparacionesMovil
 
         private void CargarClientes()
         {
-            dgvClientes.DataSource = cliente.ObtenerClientes();
+            dgvClientes.DataSource = cliente.ObtenerClientes(); // Obtiene los clientes desde la base de datos
             LimpiarCampos();
             EstablecerModoInicial();
         }
@@ -69,6 +71,7 @@ namespace ReparacionesMovil
             txtCorreo.Clear();
         }
 
+        // Configura el formulario en su modo inicial
         private void EstablecerModoInicial()
         {
             btnNuevoRegistroCliente.Enabled = true;
@@ -109,6 +112,8 @@ namespace ReparacionesMovil
                 MessageBox.Show("Por favor, complete todos los campos.");
             }
         }
+
+        // Guarda el cliente en la base de datos, ya sea creando uno nuevo o actualizando uno existente
 
         private bool GuardarCliente()
         {
@@ -169,6 +174,7 @@ namespace ReparacionesMovil
             EstablecerModoInicial();
         }
 
+        // Controla que solo se puedan ingresar números en el campo de teléfono
         private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back && e.KeyChar != '.')
@@ -177,6 +183,7 @@ namespace ReparacionesMovil
             }
         }
 
+        // Maneja los clics en las celdas del DataGridView 
         private void dgvClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
