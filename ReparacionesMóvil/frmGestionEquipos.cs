@@ -16,8 +16,9 @@ namespace CapaPresentacion
 {
     public partial class frmGestionEquipos : Form
     {
+        // Instancia de la clase Equipo para manejar las operaciones relacionadas con los equipos.
         private Equipo equipo;
-        private bool esNuevo = false;
+        private bool esNuevo = false;  // Bandera para indicar si se está creando un nuevo equipo.
         private int equipoID = -1;
         public frmGestionEquipos()
         {
@@ -78,6 +79,7 @@ namespace CapaPresentacion
 
         private void CargarEquipos()
         {
+            // Carga los datos de los equipos desde la capa de negocio al DataGridView.
             dgvEquipos.DataSource = equipo.ObtenerEquipos();
             LimpiarCampos();
             EstablecerModoInicial();
@@ -88,7 +90,7 @@ namespace CapaPresentacion
 
             txtSerie.Clear();
             txtTipo.Clear();
-            cmbEstado.SelectedIndex = 0;
+            cmbEstado.SelectedIndex = 0;  // Restablece el ComboBox al valor inicial.
             dateIngreso.Value = DateTime.Now;
         }
 
@@ -101,6 +103,7 @@ namespace CapaPresentacion
 
         private bool ValidarCampos()
         {
+            // Valida los campos del formulario antes de guardar o actualizar.
             bool esValido = true;
             StringBuilder mensajeError = new StringBuilder();
 
@@ -154,12 +157,14 @@ namespace CapaPresentacion
 
         private void dgvEquipos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            // Manejo de clics en las columnas de botones del DataGridView.
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow fila = dgvEquipos.Rows[e.RowIndex];
 
                 if (e.ColumnIndex == dgvEquipos.Columns["btnEditar"].Index)
                 {
+                    // Cargar datos del equipo seleccionado en el formulario para editar.
                     txtTipo.Text = fila.Cells["Tipo"].Value.ToString();
                     txtSerie.Text = fila.Cells["NumeroSerie"].Value.ToString();
                     string estado = fila.Cells["Estado"].Value.ToString();
@@ -274,6 +279,8 @@ namespace CapaPresentacion
         {
             try
             {
+                // Validación y guardado de los datos del equipo.
+
                 if (ValidarCampos())
                 {
                     equipo.NumeroSerie = txtSerie.Text;
