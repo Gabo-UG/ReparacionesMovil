@@ -79,10 +79,10 @@ namespace ReparacionesMovil
             panel1.Controls.Add(btnGuardarRepuesto);
             panel1.Controls.Add(btnNuevoRepuesto);
             panel1.Controls.Add(btnCancelarRepuesto);
-            panel1.Location = new Point(27, 13);
-            panel1.Margin = new Padding(3, 5, 3, 5);
+            panel1.Location = new Point(24, 10);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(517, 365);
+            panel1.Size = new Size(452, 274);
             panel1.TabIndex = 0;
             // 
             // groupBox1
@@ -96,11 +96,9 @@ namespace ReparacionesMovil
             groupBox1.Controls.Add(label2);
             groupBox1.Font = new Font("Consolas", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox1.ForeColor = Color.FromArgb(115, 14, 32);
-            groupBox1.Location = new Point(13, 15);
-            groupBox1.Margin = new Padding(3, 4, 3, 4);
+            groupBox1.Location = new Point(11, 11);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(3, 4, 3, 4);
-            groupBox1.Size = new Size(369, 335);
+            groupBox1.Size = new Size(323, 251);
             groupBox1.TabIndex = 8;
             groupBox1.TabStop = false;
             groupBox1.Text = "Registro Producto";
@@ -111,9 +109,9 @@ namespace ReparacionesMovil
             lbTitulo.BackColor = Color.FromArgb(242, 39, 56);
             lbTitulo.Font = new Font("Consolas", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbTitulo.ForeColor = Color.AntiqueWhite;
-            lbTitulo.Location = new Point(11, 7);
+            lbTitulo.Location = new Point(10, 5);
             lbTitulo.Name = "lbTitulo";
-            lbTitulo.Size = new Size(335, 36);
+            lbTitulo.Size = new Size(272, 28);
             lbTitulo.TabIndex = 9;
             lbTitulo.Text = "Registro de Producto";
             // 
@@ -122,10 +120,10 @@ namespace ReparacionesMovil
             txtRepuestoCodigo.BackColor = Color.FromArgb(18, 18, 18);
             txtRepuestoCodigo.BorderStyle = BorderStyle.None;
             txtRepuestoCodigo.ForeColor = Color.FromArgb(242, 39, 56);
-            txtRepuestoCodigo.Location = new Point(16, 85);
-            txtRepuestoCodigo.Margin = new Padding(5);
+            txtRepuestoCodigo.Location = new Point(14, 64);
+            txtRepuestoCodigo.Margin = new Padding(4, 4, 4, 4);
             txtRepuestoCodigo.Name = "txtRepuestoCodigo";
-            txtRepuestoCodigo.Size = new Size(345, 39);
+            txtRepuestoCodigo.Size = new Size(302, 31);
             txtRepuestoCodigo.TabIndex = 4;
             // 
             // label10
@@ -133,9 +131,9 @@ namespace ReparacionesMovil
             label10.AutoSize = true;
             label10.Font = new Font("Consolas", 10.8F, FontStyle.Bold);
             label10.ForeColor = Color.AntiqueWhite;
-            label10.Location = new Point(16, 49);
+            label10.Location = new Point(14, 37);
             label10.Name = "label10";
-            label10.Size = new Size(80, 22);
+            label10.Size = new Size(64, 18);
             label10.TabIndex = 7;
             label10.Text = "Codigo:";
             label10.TextAlign = ContentAlignment.MiddleLeft;
@@ -145,10 +143,10 @@ namespace ReparacionesMovil
             txtRepuestoPrecio.BackColor = Color.FromArgb(18, 18, 18);
             txtRepuestoPrecio.BorderStyle = BorderStyle.None;
             txtRepuestoPrecio.ForeColor = Color.FromArgb(242, 39, 56);
-            txtRepuestoPrecio.Location = new Point(246, 257);
-            txtRepuestoPrecio.Margin = new Padding(5);
+            txtRepuestoPrecio.Location = new Point(215, 193);
+            txtRepuestoPrecio.Margin = new Padding(4, 4, 4, 4);
             txtRepuestoPrecio.Name = "txtRepuestoPrecio";
-            txtRepuestoPrecio.Size = new Size(100, 39);
+            txtRepuestoPrecio.Size = new Size(88, 31);
             txtRepuestoPrecio.TabIndex = 4;
             // 
             // txtRepuestoNombre
@@ -156,10 +154,10 @@ namespace ReparacionesMovil
             txtRepuestoNombre.BackColor = Color.FromArgb(18, 18, 18);
             txtRepuestoNombre.BorderStyle = BorderStyle.None;
             txtRepuestoNombre.ForeColor = Color.FromArgb(242, 39, 56);
-            txtRepuestoNombre.Location = new Point(16, 171);
-            txtRepuestoNombre.Margin = new Padding(5);
+            txtRepuestoNombre.Location = new Point(14, 128);
+            txtRepuestoNombre.Margin = new Padding(4, 4, 4, 4);
             txtRepuestoNombre.Name = "txtRepuestoNombre";
-            txtRepuestoNombre.Size = new Size(345, 39);
+            txtRepuestoNombre.Size = new Size(302, 31);
             txtRepuestoNombre.TabIndex = 4;
             // 
             // label1
@@ -167,9 +165,9 @@ namespace ReparacionesMovil
             label1.AutoSize = true;
             label1.Font = new Font("Consolas", 10.8F, FontStyle.Bold);
             label1.ForeColor = Color.AntiqueWhite;
-            label1.Location = new Point(16, 141);
+            label1.Location = new Point(14, 106);
             label1.Name = "label1";
-            label1.Size = new Size(100, 22);
+            label1.Size = new Size(80, 18);
             label1.TabIndex = 0;
             label1.Text = "Repuesto:";
             // 
@@ -179,9 +177,9 @@ namespace ReparacionesMovil
             label2.AutoSize = true;
             label2.Font = new Font("Consolas", 10.8F, FontStyle.Bold);
             label2.ForeColor = Color.AntiqueWhite;
-            label2.Location = new Point(246, 227);
+            label2.Location = new Point(215, 170);
             label2.Name = "label2";
-            label2.Size = new Size(80, 22);
+            label2.Size = new Size(64, 18);
             label2.TabIndex = 1;
             label2.Text = "Precio:";
             // 
@@ -192,10 +190,10 @@ namespace ReparacionesMovil
             btnEliminarRepuesto.FlatStyle = FlatStyle.Popup;
             btnEliminarRepuesto.Font = new Font("Consolas", 10.2F, FontStyle.Bold);
             btnEliminarRepuesto.ForeColor = Color.White;
-            btnEliminarRepuesto.Location = new Point(395, 160);
-            btnEliminarRepuesto.Margin = new Padding(3, 5, 3, 5);
+            btnEliminarRepuesto.Location = new Point(346, 120);
+            btnEliminarRepuesto.Margin = new Padding(3, 4, 3, 4);
             btnEliminarRepuesto.Name = "btnEliminarRepuesto";
-            btnEliminarRepuesto.Size = new Size(111, 32);
+            btnEliminarRepuesto.Size = new Size(97, 24);
             btnEliminarRepuesto.TabIndex = 2;
             btnEliminarRepuesto.Text = "Eliminar";
             btnEliminarRepuesto.UseVisualStyleBackColor = false;
@@ -208,10 +206,10 @@ namespace ReparacionesMovil
             btnGuardarRepuesto.FlatStyle = FlatStyle.Popup;
             btnGuardarRepuesto.Font = new Font("Consolas", 10.2F, FontStyle.Bold);
             btnGuardarRepuesto.ForeColor = Color.White;
-            btnGuardarRepuesto.Location = new Point(395, 113);
-            btnGuardarRepuesto.Margin = new Padding(3, 5, 3, 5);
+            btnGuardarRepuesto.Location = new Point(346, 85);
+            btnGuardarRepuesto.Margin = new Padding(3, 4, 3, 4);
             btnGuardarRepuesto.Name = "btnGuardarRepuesto";
-            btnGuardarRepuesto.Size = new Size(111, 36);
+            btnGuardarRepuesto.Size = new Size(97, 27);
             btnGuardarRepuesto.TabIndex = 3;
             btnGuardarRepuesto.Text = "Guardar";
             btnGuardarRepuesto.UseVisualStyleBackColor = false;
@@ -223,10 +221,10 @@ namespace ReparacionesMovil
             btnNuevoRepuesto.FlatStyle = FlatStyle.Popup;
             btnNuevoRepuesto.Font = new Font("Consolas", 10.2F, FontStyle.Bold);
             btnNuevoRepuesto.ForeColor = Color.White;
-            btnNuevoRepuesto.Location = new Point(395, 64);
-            btnNuevoRepuesto.Margin = new Padding(3, 5, 3, 5);
+            btnNuevoRepuesto.Location = new Point(346, 48);
+            btnNuevoRepuesto.Margin = new Padding(3, 4, 3, 4);
             btnNuevoRepuesto.Name = "btnNuevoRepuesto";
-            btnNuevoRepuesto.Size = new Size(111, 39);
+            btnNuevoRepuesto.Size = new Size(97, 29);
             btnNuevoRepuesto.TabIndex = 0;
             btnNuevoRepuesto.Text = "Nuevo";
             btnNuevoRepuesto.UseVisualStyleBackColor = false;
@@ -238,10 +236,10 @@ namespace ReparacionesMovil
             btnCancelarRepuesto.FlatStyle = FlatStyle.Popup;
             btnCancelarRepuesto.Font = new Font("Consolas", 10.2F, FontStyle.Bold);
             btnCancelarRepuesto.ForeColor = Color.White;
-            btnCancelarRepuesto.Location = new Point(395, 203);
-            btnCancelarRepuesto.Margin = new Padding(3, 5, 3, 5);
+            btnCancelarRepuesto.Location = new Point(346, 152);
+            btnCancelarRepuesto.Margin = new Padding(3, 4, 3, 4);
             btnCancelarRepuesto.Name = "btnCancelarRepuesto";
-            btnCancelarRepuesto.Size = new Size(111, 36);
+            btnCancelarRepuesto.Size = new Size(97, 27);
             btnCancelarRepuesto.TabIndex = 1;
             btnCancelarRepuesto.Text = "Cancelar";
             btnCancelarRepuesto.UseVisualStyleBackColor = false;
@@ -264,15 +262,15 @@ namespace ReparacionesMovil
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.Black;
             dataGridViewCellStyle2.Font = new Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle2.ForeColor = Color.AntiqueWhite;
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
             dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(242, 39, 56);
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
             dgvRepuesto.DefaultCellStyle = dataGridViewCellStyle2;
             dgvRepuesto.EnableHeadersVisualStyles = false;
             dgvRepuesto.GridColor = SystemColors.ButtonShadow;
-            dgvRepuesto.Location = new Point(27, 389);
-            dgvRepuesto.Margin = new Padding(3, 5, 3, 5);
+            dgvRepuesto.Location = new Point(24, 292);
+            dgvRepuesto.Margin = new Padding(3, 4, 3, 4);
             dgvRepuesto.Name = "dgvRepuesto";
             dgvRepuesto.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -284,7 +282,7 @@ namespace ReparacionesMovil
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
             dgvRepuesto.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dgvRepuesto.RowHeadersWidth = 51;
-            dgvRepuesto.Size = new Size(517, 256);
+            dgvRepuesto.Size = new Size(452, 192);
             dgvRepuesto.TabIndex = 4;
             dgvRepuesto.CellClick += dgvRepuesto_CellClick;
             // 
@@ -293,9 +291,9 @@ namespace ReparacionesMovil
             label3.AutoSize = true;
             label3.Font = new Font("Consolas", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.FromArgb(115, 14, 32);
-            label3.Location = new Point(45, 27);
+            label3.Location = new Point(39, 20);
             label3.Name = "label3";
-            label3.Size = new Size(0, 43);
+            label3.Size = new Size(0, 36);
             label3.TabIndex = 5;
             // 
             // panel2
@@ -306,10 +304,10 @@ namespace ReparacionesMovil
             panel2.Controls.Add(btnGuardarServicio);
             panel2.Controls.Add(btnNuevoServicio);
             panel2.Controls.Add(btnCancelarServicio);
-            panel2.Location = new Point(550, 13);
-            panel2.Margin = new Padding(3, 5, 3, 5);
+            panel2.Location = new Point(481, 10);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(533, 365);
+            panel2.Size = new Size(466, 274);
             panel2.TabIndex = 9;
             // 
             // groupBox2
@@ -327,11 +325,9 @@ namespace ReparacionesMovil
             groupBox2.Controls.Add(label9);
             groupBox2.Font = new Font("Consolas", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox2.ForeColor = Color.FromArgb(115, 14, 32);
-            groupBox2.Location = new Point(13, 15);
-            groupBox2.Margin = new Padding(3, 4, 3, 4);
+            groupBox2.Location = new Point(11, 11);
             groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(3, 4, 3, 4);
-            groupBox2.Size = new Size(384, 335);
+            groupBox2.Size = new Size(336, 251);
             groupBox2.TabIndex = 8;
             groupBox2.TabStop = false;
             groupBox2.Text = "Registro Servicios";
@@ -342,9 +338,9 @@ namespace ReparacionesMovil
             label11.BackColor = Color.FromArgb(242, 39, 56);
             label11.Font = new Font("Consolas", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.ForeColor = Color.AntiqueWhite;
-            label11.Location = new Point(7, 7);
+            label11.Location = new Point(6, 5);
             label11.Name = "label11";
-            label11.Size = new Size(351, 36);
+            label11.Size = new Size(285, 28);
             label11.TabIndex = 10;
             label11.Text = "Registro de Servicios";
             // 
@@ -356,10 +352,10 @@ namespace ReparacionesMovil
             cmbCategoria.ForeColor = Color.FromArgb(242, 39, 56);
             cmbCategoria.FormattingEnabled = true;
             cmbCategoria.Items.AddRange(new object[] { "Seleccione", "Reparacion", "Mantenimiento" });
-            cmbCategoria.Location = new Point(16, 257);
-            cmbCategoria.Margin = new Padding(5);
+            cmbCategoria.Location = new Point(14, 193);
+            cmbCategoria.Margin = new Padding(4, 4, 4, 4);
             cmbCategoria.Name = "cmbCategoria";
-            cmbCategoria.Size = new Size(257, 36);
+            cmbCategoria.Size = new Size(225, 30);
             cmbCategoria.TabIndex = 11;
             // 
             // txtServicioNombre
@@ -367,10 +363,10 @@ namespace ReparacionesMovil
             txtServicioNombre.BackColor = Color.FromArgb(18, 18, 18);
             txtServicioNombre.BorderStyle = BorderStyle.None;
             txtServicioNombre.ForeColor = Color.FromArgb(242, 39, 56);
-            txtServicioNombre.Location = new Point(16, 168);
-            txtServicioNombre.Margin = new Padding(5);
+            txtServicioNombre.Location = new Point(14, 126);
+            txtServicioNombre.Margin = new Padding(4, 4, 4, 4);
             txtServicioNombre.Name = "txtServicioNombre";
-            txtServicioNombre.Size = new Size(345, 39);
+            txtServicioNombre.Size = new Size(302, 31);
             txtServicioNombre.TabIndex = 4;
             // 
             // txtServicioCodigo
@@ -378,10 +374,10 @@ namespace ReparacionesMovil
             txtServicioCodigo.BackColor = Color.FromArgb(18, 18, 18);
             txtServicioCodigo.BorderStyle = BorderStyle.None;
             txtServicioCodigo.ForeColor = Color.FromArgb(242, 39, 56);
-            txtServicioCodigo.Location = new Point(16, 75);
-            txtServicioCodigo.Margin = new Padding(5);
+            txtServicioCodigo.Location = new Point(14, 56);
+            txtServicioCodigo.Margin = new Padding(4, 4, 4, 4);
             txtServicioCodigo.Name = "txtServicioCodigo";
-            txtServicioCodigo.Size = new Size(345, 39);
+            txtServicioCodigo.Size = new Size(302, 31);
             txtServicioCodigo.TabIndex = 4;
             // 
             // txtServicioPrecio
@@ -389,10 +385,10 @@ namespace ReparacionesMovil
             txtServicioPrecio.BackColor = Color.FromArgb(18, 18, 18);
             txtServicioPrecio.BorderStyle = BorderStyle.None;
             txtServicioPrecio.ForeColor = Color.FromArgb(242, 39, 56);
-            txtServicioPrecio.Location = new Point(281, 257);
-            txtServicioPrecio.Margin = new Padding(5);
+            txtServicioPrecio.Location = new Point(246, 193);
+            txtServicioPrecio.Margin = new Padding(4, 4, 4, 4);
             txtServicioPrecio.Name = "txtServicioPrecio";
-            txtServicioPrecio.Size = new Size(96, 39);
+            txtServicioPrecio.Size = new Size(84, 31);
             txtServicioPrecio.TabIndex = 4;
             // 
             // txtServicioIva
@@ -400,10 +396,10 @@ namespace ReparacionesMovil
             txtServicioIva.BackColor = Color.FromArgb(13, 13, 13);
             txtServicioIva.BorderStyle = BorderStyle.FixedSingle;
             txtServicioIva.ForeColor = Color.FromArgb(242, 39, 56);
-            txtServicioIva.Location = new Point(16, 427);
-            txtServicioIva.Margin = new Padding(3, 5, 3, 5);
+            txtServicioIva.Location = new Point(14, 320);
+            txtServicioIva.Margin = new Padding(3, 4, 3, 4);
             txtServicioIva.Name = "txtServicioIva";
-            txtServicioIva.Size = new Size(133, 46);
+            txtServicioIva.Size = new Size(117, 38);
             txtServicioIva.TabIndex = 7;
             // 
             // label5
@@ -411,9 +407,9 @@ namespace ReparacionesMovil
             label5.AutoSize = true;
             label5.Font = new Font("Consolas", 10.8F, FontStyle.Bold);
             label5.ForeColor = Color.AntiqueWhite;
-            label5.Location = new Point(16, 139);
+            label5.Location = new Point(14, 104);
             label5.Name = "label5";
-            label5.Size = new Size(100, 22);
+            label5.Size = new Size(80, 18);
             label5.TabIndex = 0;
             label5.Text = "Servicio:";
             // 
@@ -422,9 +418,9 @@ namespace ReparacionesMovil
             label6.AutoSize = true;
             label6.Font = new Font("Consolas", 10.8F, FontStyle.Bold);
             label6.ForeColor = Color.AntiqueWhite;
-            label6.Location = new Point(16, 227);
+            label6.Location = new Point(14, 170);
             label6.Name = "label6";
-            label6.Size = new Size(110, 22);
+            label6.Size = new Size(88, 18);
             label6.TabIndex = 1;
             label6.Text = "Categoria:";
             // 
@@ -433,9 +429,9 @@ namespace ReparacionesMovil
             label7.AutoSize = true;
             label7.Font = new Font("Consolas", 10.8F, FontStyle.Bold);
             label7.ForeColor = Color.AntiqueWhite;
-            label7.Location = new Point(16, 45);
+            label7.Location = new Point(14, 34);
             label7.Name = "label7";
-            label7.Size = new Size(80, 22);
+            label7.Size = new Size(64, 18);
             label7.TabIndex = 2;
             label7.Text = "Codigo:";
             // 
@@ -444,9 +440,9 @@ namespace ReparacionesMovil
             label8.AutoSize = true;
             label8.Font = new Font("Consolas", 10.8F, FontStyle.Bold);
             label8.ForeColor = Color.AntiqueWhite;
-            label8.Location = new Point(281, 228);
+            label8.Location = new Point(246, 171);
             label8.Name = "label8";
-            label8.Size = new Size(80, 22);
+            label8.Size = new Size(64, 18);
             label8.TabIndex = 3;
             label8.Text = "Precio:";
             // 
@@ -455,9 +451,9 @@ namespace ReparacionesMovil
             label9.AutoSize = true;
             label9.Font = new Font("Consolas", 10.8F, FontStyle.Bold);
             label9.ForeColor = Color.FromArgb(242, 39, 56);
-            label9.Location = new Point(16, 400);
+            label9.Location = new Point(14, 300);
             label9.Name = "label9";
-            label9.Size = new Size(50, 22);
+            label9.Size = new Size(40, 18);
             label9.TabIndex = 4;
             label9.Text = "Iva:";
             // 
@@ -468,10 +464,10 @@ namespace ReparacionesMovil
             btnEliminarServicio.FlatStyle = FlatStyle.Popup;
             btnEliminarServicio.Font = new Font("Consolas", 10.2F, FontStyle.Bold);
             btnEliminarServicio.ForeColor = Color.White;
-            btnEliminarServicio.Location = new Point(410, 160);
-            btnEliminarServicio.Margin = new Padding(3, 5, 3, 5);
+            btnEliminarServicio.Location = new Point(359, 120);
+            btnEliminarServicio.Margin = new Padding(3, 4, 3, 4);
             btnEliminarServicio.Name = "btnEliminarServicio";
-            btnEliminarServicio.Size = new Size(111, 32);
+            btnEliminarServicio.Size = new Size(97, 24);
             btnEliminarServicio.TabIndex = 2;
             btnEliminarServicio.Text = "Eliminar";
             btnEliminarServicio.UseVisualStyleBackColor = false;
@@ -484,10 +480,10 @@ namespace ReparacionesMovil
             btnGuardarServicio.FlatStyle = FlatStyle.Popup;
             btnGuardarServicio.Font = new Font("Consolas", 10.2F, FontStyle.Bold);
             btnGuardarServicio.ForeColor = Color.White;
-            btnGuardarServicio.Location = new Point(410, 109);
-            btnGuardarServicio.Margin = new Padding(3, 5, 3, 5);
+            btnGuardarServicio.Location = new Point(359, 82);
+            btnGuardarServicio.Margin = new Padding(3, 4, 3, 4);
             btnGuardarServicio.Name = "btnGuardarServicio";
-            btnGuardarServicio.Size = new Size(111, 39);
+            btnGuardarServicio.Size = new Size(97, 29);
             btnGuardarServicio.TabIndex = 9;
             btnGuardarServicio.Text = "Guardar";
             btnGuardarServicio.UseVisualStyleBackColor = false;
@@ -499,10 +495,10 @@ namespace ReparacionesMovil
             btnNuevoServicio.FlatStyle = FlatStyle.Popup;
             btnNuevoServicio.Font = new Font("Consolas", 10.2F, FontStyle.Bold);
             btnNuevoServicio.ForeColor = Color.White;
-            btnNuevoServicio.Location = new Point(410, 68);
-            btnNuevoServicio.Margin = new Padding(3, 5, 3, 5);
+            btnNuevoServicio.Location = new Point(359, 51);
+            btnNuevoServicio.Margin = new Padding(3, 4, 3, 4);
             btnNuevoServicio.Name = "btnNuevoServicio";
-            btnNuevoServicio.Size = new Size(111, 31);
+            btnNuevoServicio.Size = new Size(97, 23);
             btnNuevoServicio.TabIndex = 0;
             btnNuevoServicio.Text = "Nuevo";
             btnNuevoServicio.UseVisualStyleBackColor = false;
@@ -514,10 +510,10 @@ namespace ReparacionesMovil
             btnCancelarServicio.FlatStyle = FlatStyle.Popup;
             btnCancelarServicio.Font = new Font("Consolas", 10.2F, FontStyle.Bold);
             btnCancelarServicio.ForeColor = Color.White;
-            btnCancelarServicio.Location = new Point(410, 203);
-            btnCancelarServicio.Margin = new Padding(3, 5, 3, 5);
+            btnCancelarServicio.Location = new Point(359, 152);
+            btnCancelarServicio.Margin = new Padding(3, 4, 3, 4);
             btnCancelarServicio.Name = "btnCancelarServicio";
-            btnCancelarServicio.Size = new Size(111, 37);
+            btnCancelarServicio.Size = new Size(97, 28);
             btnCancelarServicio.TabIndex = 1;
             btnCancelarServicio.Text = "Cancelar";
             btnCancelarServicio.UseVisualStyleBackColor = false;
@@ -540,15 +536,15 @@ namespace ReparacionesMovil
             dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = Color.Black;
             dataGridViewCellStyle5.Font = new Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle5.ForeColor = Color.AntiqueWhite;
+            dataGridViewCellStyle5.ForeColor = SystemColors.ControlText;
             dataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(242, 39, 56);
             dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = DataGridViewTriState.False;
             dgvServicio.DefaultCellStyle = dataGridViewCellStyle5;
             dgvServicio.EnableHeadersVisualStyles = false;
             dgvServicio.GridColor = SystemColors.ButtonShadow;
-            dgvServicio.Location = new Point(550, 389);
-            dgvServicio.Margin = new Padding(3, 5, 3, 5);
+            dgvServicio.Location = new Point(481, 292);
+            dgvServicio.Margin = new Padding(3, 4, 3, 4);
             dgvServicio.Name = "dgvServicio";
             dgvServicio.ReadOnly = true;
             dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -560,7 +556,7 @@ namespace ReparacionesMovil
             dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
             dgvServicio.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             dgvServicio.RowHeadersWidth = 51;
-            dgvServicio.Size = new Size(533, 257);
+            dgvServicio.Size = new Size(466, 193);
             dgvServicio.TabIndex = 10;
             dgvServicio.CellClick += dgvServicio_CellClick;
             // 
@@ -574,17 +570,18 @@ namespace ReparacionesMovil
             // 
             // frmRegistroRepuesto
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(1095, 660);
+            ClientSize = new Size(958, 495);
             Controls.Add(dgvServicio);
             Controls.Add(panel2);
             Controls.Add(label3);
             Controls.Add(dgvRepuesto);
             Controls.Add(panel1);
+            ForeColor = SystemColors.ControlText;
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 5, 3, 5);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frmRegistroRepuesto";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Registro Repuesto";

@@ -97,9 +97,9 @@ namespace ReparacionesMovil
             // lbTitulo
             // 
             lbTitulo.AutoSize = true;
-            lbTitulo.BackColor = Color.FromArgb(242, 39, 56);
+            lbTitulo.BackColor = Color.FromArgb(128, 255, 255);
             lbTitulo.Font = new Font("Consolas", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbTitulo.ForeColor = Color.AntiqueWhite;
+            lbTitulo.ForeColor = Color.Black;
             lbTitulo.Location = new Point(6, 0);
             lbTitulo.Name = "lbTitulo";
             lbTitulo.Size = new Size(259, 28);
@@ -223,10 +223,10 @@ namespace ReparacionesMovil
             // 
             // btnNuevoRegistroCliente
             // 
-            btnNuevoRegistroCliente.BackColor = Color.FromArgb(115, 14, 32);
+            btnNuevoRegistroCliente.BackColor = Color.FromArgb(192, 255, 255);
             btnNuevoRegistroCliente.FlatStyle = FlatStyle.Popup;
             btnNuevoRegistroCliente.Font = new Font("Consolas", 10.2F, FontStyle.Bold);
-            btnNuevoRegistroCliente.ForeColor = Color.AntiqueWhite;
+            btnNuevoRegistroCliente.ForeColor = Color.Black;
             btnNuevoRegistroCliente.Location = new Point(14, 10);
             btnNuevoRegistroCliente.Name = "btnNuevoRegistroCliente";
             btnNuevoRegistroCliente.Size = new Size(97, 32);
@@ -237,10 +237,10 @@ namespace ReparacionesMovil
             // 
             // btnCancelarRegistroCliente
             // 
-            btnCancelarRegistroCliente.BackColor = Color.FromArgb(242, 39, 56);
+            btnCancelarRegistroCliente.BackColor = Color.FromArgb(128, 255, 255);
             btnCancelarRegistroCliente.FlatStyle = FlatStyle.Popup;
             btnCancelarRegistroCliente.Font = new Font("Consolas", 10.2F, FontStyle.Bold);
-            btnCancelarRegistroCliente.ForeColor = Color.AntiqueWhite;
+            btnCancelarRegistroCliente.ForeColor = Color.Black;
             btnCancelarRegistroCliente.Location = new Point(226, 422);
             btnCancelarRegistroCliente.Name = "btnCancelarRegistroCliente";
             btnCancelarRegistroCliente.Size = new Size(97, 32);
